@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Funcionario } from './funcionario';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ export class AppComponent {
   ultimoId = 0;
   nome = 'Jefferson Torres';
   adicionado: boolean = false;
-  funcionarios: any[] = [];
+  funcionarios: Funcionario[] = [];
 
   adicionar() {
     console.log(`Adicionando ${this.nome}`);
