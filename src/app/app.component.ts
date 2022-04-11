@@ -16,9 +16,4 @@ export class AppComponent {
     this.nome = `João ${numero}`;
   }
 
-  alterarNome(event: any) {
-    //console.log(event);
-    this.nome = event.target.value;
-  }
-
 }
