@@ -7,19 +7,9 @@ import { Funcionario } from './funcionario';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  ultimoId = 0;
-  nome = 'Jefferson Torres';
-  adicionado: boolean = false;
   funcionarios: Funcionario[] = [];
 
-  adicionar() {
-    console.log(`Adicionando ${this.nome}`);
-    this.adicionado = true;
-
-    this.funcionarios.push({
-      id: ++this.ultimoId,
-      nome: this.nome
-    });
+  aoAdicionar(funcionario: Funcionario){
+    this.funcionarios.push(funcionario);
   }
-
 }
